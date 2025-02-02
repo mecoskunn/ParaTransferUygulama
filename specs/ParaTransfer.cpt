@@ -80,4 +80,5 @@ This is a concept file with following syntax for each concept.
 * Check "accountNameText" locator isDisplayed
 * Clear "accountNameInput" text area
 * Send "accountNameInput" Value To Element <hesapAd>
+* Wait "1" Seconds
 * Check If "transferMoneySendButton" Element's Attribute "tabindex" Contains The Value "-1"

@@ -1,6 +1,7 @@
 package base;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -91,5 +92,7 @@ public class Method extends ConnectElement{
     }
     public void clearTextArea(String locatorName) throws Exception {
         connection(locatorName).clear();
+        connection(locatorName).sendKeys(" ");
+        connection(locatorName).sendKeys(Keys.BACK_SPACE);
     }
 }
