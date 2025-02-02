@@ -1,0 +1,12 @@
+Created by MEC on 2.02.2025
+
+This is a concept file with following syntax for each concept.
+# <mail> maili ve <sifre> sifresi ile Login ol
+* Go To "https://catchylabs-webclient.testinium.com/signIn" Address
+* Wait "1" Seconds
+* Send "userName" Value To Element <mail>
+* Send "password" Value To Element <sifre>
+* Click The "login" Element
+* Wait "1" Seconds
+* Click The "OMTButton" Element
+* Check "myAccountText" locator isDisplayed

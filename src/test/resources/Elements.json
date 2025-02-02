@@ -1,0 +1,31 @@
+{
+  "element": [
+    {
+      "key": "userName",
+      "value": "//*[@id=\"root\"]/div/div[2]/div/div[1]/div/div/div[2]/div/input",
+      "type":"xpath"
+    },
+    {
+      "key": "password",
+      "value": "//*[@id=\"root\"]/div/div[2]/div/div[1]/div/div/div[3]/div/input",
+      "type":"xpath"
+    },
+    {
+      "key": "login",
+      "value": "//*[@id=\"root\"]/div/div[2]/div/div[1]/div/div/div[4]/div/div",
+      "type":"xpath"
+    },
+    {
+      "key": "OMTButton",
+      "value": "//div[contains(text() , \"Open Money Transfer\")]",
+      "type":"xpath"
+    },
+    {
+      "key": "myAccountText",
+      "value": "//div[contains(text() , \"My account\")]",
+      "type":"xpath"
+    }
+
+
+  ]
+}
