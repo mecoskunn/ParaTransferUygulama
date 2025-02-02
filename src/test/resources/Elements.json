@@ -64,6 +64,81 @@
       "key": "lastTransactionsAmountText",
       "value": "//*[@id=\"root\"]/div/div[2]/div[2]/div[1]/div/div/div/div[6]/div/div[1]/div/div/div/div[4]/div[2]/div",
       "type":"xpath"
+    },
+    {
+      "key": "addMoneyButton",
+      "value": "//div[contains(text() , \"Add money\")]",
+      "type":"xpath"
+    },
+    {
+      "key": "cardNumberText",
+      "value": "//div[contains(text() , \"Card number\")]",
+      "type":"xpath"
+    },
+    {
+      "key": "cardNumberInput",
+      "value": "(//div[@class='css-175oi2r']/div[@class='css-175oi2r r-13qz1uu']/input)[1]",
+      "type":"xpath"
+    },
+    {
+      "key": "cardHolderText",
+      "value": "//div[contains(text() , \"Card holder\")]",
+      "type":"xpath"
+    },
+    {
+      "key": "expiryDateText",
+      "value": "//div[contains(text() , \"Expiry date\")]",
+      "type":"xpath"
+    },
+    {
+      "key": "cvvText",
+      "value": "//div[contains(text() , \"CVV\")]",
+      "type":"xpath"
+    },
+    {
+      "key": "addMoneyAmountText",
+      "value": "(//div[@class=\"css-175oi2r r-13qz1uu\"]/div[text()=\"Amount\"])",
+      "type":"xpath"
+    },
+    {
+      "key": "cardHolderInput",
+      "value": "(//div[@class='css-175oi2r']/div[@class='css-175oi2r r-13qz1uu']/input)[2]",
+      "type":"xpath"
+    },
+    {
+      "key": "expiryDateInput",
+      "value": "(//div[@class='css-175oi2r']/div[@class='css-175oi2r r-13qz1uu']/input)[3]",
+      "type":"xpath"
+    },
+    {
+      "key": "cvvInput",
+      "value": "(//div[@class='css-175oi2r']/div[@class='css-175oi2r r-13qz1uu']/input)[4]",
+      "type":"xpath"
+    },
+    {
+      "key": "addMoneyAmountInput",
+      "value": "(//div[@class='css-175oi2r']/div[@class='css-175oi2r r-13qz1uu']/input)[5]",
+      "type":"xpath"
+    },
+    {
+      "key": "editAccountButton",
+      "value": "//div[contains(text() , \"Edit account\")]",
+      "type":"xpath"
+    },
+    {
+      "key": "accountNameText",
+      "value": "//div[contains(text() , \"Account name\")]",
+      "type":"xpath"
+    },
+    {
+      "key": "accountNameInput",
+      "value": "(//div[@class='css-175oi2r']/div[@class='css-175oi2r r-13qz1uu']/input)",
+      "type":"xpath"
+    },
+    {
+      "key": "myAccountAccountNameText",
+      "value": "//*[@id=\"root\"]/div/div[2]/div[2]/div[1]/div/div/div/div[3]/div[1]/div[2]",
+      "type":"xpath"
     }
 
 

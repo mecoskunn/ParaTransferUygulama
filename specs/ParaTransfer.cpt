@@ -34,3 +34,50 @@ This is a concept file with following syntax for each concept.
 * Wait "2" Seconds
 * Send "amountInput" Value To Element <tutar>
 * Check If "transferMoneySendButton" Element's Attribute "tabindex" Contains The Value "-1"
+
+# Kart bilgileri sırasıyla <cardNumber> <cardHolder> <expiryDate> <cvv> <amount> girilir
+* Click The "addMoneyButton" Element
+* Check "addMoneyButton" locator isDisplayed
+* Check "cardNumberText" locator isDisplayed
+* Check "cardHolderText" locator isDisplayed
+* Check "expiryDateText" locator isDisplayed
+* Check "cvvText" locator isDisplayed
+* Send "cardNumberInput" Value To Element <cardNumber>
+* Send "cardHolderInput" Value To Element <cardHolder>
+* Send "expiryDateInput" Value To Element <expiryDate>
+* Send "cvvInput" Value To Element <cvv>
+* Send "addMoneyAmountInput" Value To Element <amount>
+* Click The "transferMoneySendButton" Element
+* Check If Element "lastTransactionsAmountText" Contains Text <amount>
+
+# Kart bilgileri sırasıyla <cardNumber> <cardHolder> <expiryDate> <cvv> <amount> girilir basarisiz sonuc beklenir
+* Click The "addMoneyButton" Element
+* Check "addMoneyButton" locator isDisplayed
+* Check "cardNumberText" locator isDisplayed
+* Check "cardHolderText" locator isDisplayed
+* Check "expiryDateText" locator isDisplayed
+* Check "cvvText" locator isDisplayed
+* Send "cardNumberInput" Value To Element <cardNumber>
+* Send "cardHolderInput" Value To Element <cardHolder>
+* Send "expiryDateInput" Value To Element <expiryDate>
+* Send "cvvInput" Value To Element <cvv>
+* Send "addMoneyAmountInput" Value To Element <amount>
+* Check If "transferMoneySendButton" Element's Attribute "tabindex" Contains The Value "-1"
+
+# Hesap adi <hesapAd> olarak degistirilir
+* Click The "editAccountButton" Element
+* Check "editAccountButton" locator isDisplayed
+* Check "accountNameText" locator isDisplayed
+* Clear "accountNameInput" text area
+* Send "accountNameInput" Value To Element <hesapAd>
+* Click The "transferMoneySendButton" Element
+* Wait "1" Seconds
+* Check If Element "myAccountAccountNameText" Contains Text <hesapAd>
+
+# Hesap adi <hesapAd> olarak degistirme basarisiz olur hata verir
+* Click The "editAccountButton" Element
+* Check "editAccountButton" locator isDisplayed
+* Check "accountNameText" locator isDisplayed
+* Clear "accountNameInput" text area
+* Send "accountNameInput" Value To Element <hesapAd>
+* Check If "transferMoneySendButton" Element's Attribute "tabindex" Contains The Value "-1"

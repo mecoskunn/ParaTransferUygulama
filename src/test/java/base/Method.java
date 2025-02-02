@@ -89,4 +89,7 @@ public class Method extends ConnectElement{
         Select select = new Select(dropdown);
         select.selectByVisibleText(visibleText);
     }
+    public void clearTextArea(String locatorName) throws Exception {
+        connection(locatorName).clear();
+    }
 }

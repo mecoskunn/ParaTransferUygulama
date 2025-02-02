@@ -70,4 +70,8 @@ public class StepImplemation extends BaseTest{
     public void selectCheck(String text, String locatorName) throws Exception{
         komut.selectDropdownByVisibleText(text,locatorName);
     }
+    @Step("Clear <locatorName> text area")
+    public void clearArea(String locatorName) throws Exception{
+        komut.clearTextArea(locatorName);
+    }
 }
