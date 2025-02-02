@@ -24,6 +24,46 @@
       "key": "myAccountText",
       "value": "//div[contains(text() , \"My account\")]",
       "type":"xpath"
+    },
+    {
+      "key": "transferMoneyButton",
+      "value": "//div[contains(text() , \"Transfer money\")]",
+      "type":"xpath"
+    },
+    {
+      "key": "senderAccountText",
+      "value": "//div[contains(text() , \"Sender account\")]",
+      "type":"xpath"
+    },
+    {
+      "key": "receiverAccountText",
+      "value": "//div[contains(text() , \"Receiver account\")]",
+      "type":"xpath"
+    },
+    {
+      "key": "transferMoneyAmountText",
+      "value": "(//div[@class=\"css-175oi2r\"]/div[text()=\"Amount\"])[2]",
+      "type":"xpath"
+    },
+    {
+      "key": "transferMoneySendButton",
+      "value": "//div[@class=\"css-175oi2r\"]/div[@tabindex]",
+      "type":"xpath"
+    },
+    {
+      "key": "receiverAccountSelect",
+      "value": "(//div[@class=\"css-175oi2r r-1777fci\"]//select)[2]",
+      "type":"xpath"
+    },
+    {
+      "key": "amountInput",
+      "value": "//div[@class='css-175oi2r']/div[@class='css-175oi2r r-13qz1uu']/input",
+      "type":"xpath"
+    },
+    {
+      "key": "lastTransactionsAmountText",
+      "value": "//*[@id=\"root\"]/div/div[2]/div[2]/div[1]/div/div/div/div[6]/div/div[1]/div/div/div/div[4]/div[2]/div",
+      "type":"xpath"
     }
 
 

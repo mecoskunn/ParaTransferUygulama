@@ -31,7 +31,7 @@ public class BaseTest {
     @AfterScenario
     public static void closeDriver(){
 
-        // driver.quit();
+         driver.quit();
 
     }
 }

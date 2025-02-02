@@ -3,6 +3,7 @@ package base;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 
 import java.util.logging.Logger;
 
@@ -75,12 +76,17 @@ public class Method extends ConnectElement{
         return value;
     }
     public void sendText(String text, String locatorName) throws Exception {
-        System.out.println("metod1 calıstı");
+
         connection(locatorName).sendKeys(text);
-        System.out.println("metod3 calıstı");
+
     }
     public Boolean checkIsElementVisible(String locatorName) throws Exception {
         Boolean value = connection(locatorName).isDisplayed();
         return value;
+    }
+    public void selectDropdownByVisibleText(String visibleText, String locatorName) throws Exception{
+        WebElement dropdown = connection(locatorName);
+        Select select = new Select(dropdown);
+        select.selectByVisibleText(visibleText);
     }
 }

@@ -66,4 +66,8 @@ public class StepImplemation extends BaseTest{
         Assertions.assertTrue(komut.checkIsElementVisible(locatorName),"locator isNotDisplayed");
         logger.info(locatorName + "is displayed");
     }
+    @Step("Select <text> for Element <locatorName>")
+    public void selectCheck(String text, String locatorName) throws Exception{
+        komut.selectDropdownByVisibleText(text,locatorName);
+    }
 }

@@ -10,3 +10,27 @@ This is a concept file with following syntax for each concept.
 * Wait "1" Seconds
 * Click The "OMTButton" Element
 * Check "myAccountText" locator isDisplayed
+
+# <Hesap> hesabına <tutar> tutarında para transferi yapılır
+* Click The "transferMoneyButton" Element
+* Check "senderAccountText" locator isDisplayed
+* Check "receiverAccountText" locator isDisplayed
+* Check "transferMoneyAmountText" locator isDisplayed
+* Check If "transferMoneySendButton" Element's Attribute "tabindex" Contains The Value "-1"
+* Select <Hesap> for Element "receiverAccountSelect"
+* Wait "2" Seconds
+* Send "amountInput" Value To Element <tutar>
+* Check If "transferMoneySendButton" Element's Attribute "tabindex" Contains The Value "0"
+* Click The "transferMoneySendButton" Element
+* Check If Element "lastTransactionsAmountText" Contains Text <tutar>
+
+# <Hesap> hesabına <tutar> tutarında negatif para transferi yapılır
+* Click The "transferMoneyButton" Element
+* Check "senderAccountText" locator isDisplayed
+* Check "receiverAccountText" locator isDisplayed
+* Check "transferMoneyAmountText" locator isDisplayed
+* Check If "transferMoneySendButton" Element's Attribute "tabindex" Contains The Value "-1"
+* Select <Hesap> for Element "receiverAccountSelect"
+* Wait "2" Seconds
+* Send "amountInput" Value To Element <tutar>
+* Check If "transferMoneySendButton" Element's Attribute "tabindex" Contains The Value "-1"
